@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/newpic"
+            android:title="New" />
+        <item
+            android:id="@+id/nav_save"
+            android:icon="@drawable/save"
+            android:title="Save" />
+        <item
+            android:id="@+id/nav_importpic"
+            android:icon="@drawable/importpic"
+            android:title="Pictures" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/list"
+            android:title="Classes" />
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/text"
+            android:title="Text" />
+    </group>
+
+
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_google"
+                android:icon="@drawable/google"
+                android:title="Google" />
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/youtube"
+                android:title="Youtube" />
+            <item
+                android:id="@+id/nav_Line"
+                android:icon="@drawable/line"
+                android:title="Line" />
+        </menu>
+    </item>
+
+
+</menu>

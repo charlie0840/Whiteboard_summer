@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233f69">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please pick your school"
+        android:textSize="25sp"
+        android:layout_above="@+id/school_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:focusableInTouchMode="false"
+        android:textColor="#ffffff"
+        android:id="@+id/textView" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/school_spinner"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/pickschoolconfirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_below="@+id/school_spinner"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/pickschoolcancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel "
+        android:layout_below="@+id/pickschoolconfirm_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="#25406a"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

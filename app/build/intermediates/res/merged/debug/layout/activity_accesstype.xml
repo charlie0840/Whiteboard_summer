@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233f69">
+
+    <Button
+        android:id="@+id/classroom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Classroom   "
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/publicaccess_btn" />
+
+    <Button
+        android:id="@+id/publicaccess_btn"
+        android:layout_below="@+id/classroom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:text="Public Access"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select your access"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/classroom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+</RelativeLayout>

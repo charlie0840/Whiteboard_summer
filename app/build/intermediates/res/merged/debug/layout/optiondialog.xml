@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">    
+       <Button
+           android:id="@+id/optionCreateorJoin_btn"
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Create"
+       />
+       <Button
+           android:id="@+id/optionDestroyorLeave_btn"
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Destroy"
+       />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">    
+       <Button
+           android:id="@+id/optionPeers"
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Peers"
+       />
+       
+       <Button
+           android:id="@+id/optionCancel"
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Cancel"
+       />
+    
+    </LinearLayout>
+</LinearLayout>

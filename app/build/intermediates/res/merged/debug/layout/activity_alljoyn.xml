@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.charlie0840.whiteboard1.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFFFF" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/facebook_btn"
+            android:background="@drawable/facebook"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/twitter_btn"
+            android:background="@drawable/twitter"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/google_btn"
+            android:background="@drawable/google"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/line_btn"
+            android:background="@drawable/line"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/youtube_btn"
+            android:background="@drawable/youtube"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="New
+        Button"
+        android:id="@+id/pingGroupList"
+        android:layout_alignTop="@+id/drawing"
+        android:background="#dbdcde"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_toRightOf="@+id/socialbar_btn" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pingGroupList"
+        android:layout_alignLeft="@+id/drawing"
+        android:id="@+id/linearLayout3">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton6"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignLeft="@+id/drawing"
+            android:background="@drawable/undo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton7"
+            android:layout_below="@+id/imageButton6"
+            android:layout_alignLeft="@+id/drawing"
+            android:background="@drawable/redo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_above="@+id/imageButton4"
+            android:layout_alignLeft="@+id/drawing"
+            android:background="@drawable/newpic"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignLeft="@+id/drawing"
+            android:background="@drawable/save"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_btn"
+            android:background="@drawable/list"/>
+
+        <Switch
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:text="New Switch"
+            android:id="@+id/switch1"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/imageButton20" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:id="@+id/socialbar_btn"
+        android:background="@drawable/up"
+        android:layout_alignTop="@+id/drawing"
+        android:layout_toLeftOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:id="@+id/navigationbar_btn"
+        android:background="@drawable/up"
+        android:layout_toRightOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton20"
+        android:background="@drawable/socialdrag"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_marginRight="5dp"
+        android:id="@+id/linearLayout4">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageButton9"
+            android:layout_toLeftOf="@+id/linearLayout2">
+
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FF990099"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF990099" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FFFF6666"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFF6666" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FF000000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF000000" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FF787878"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF787878" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_alignRight="@+id/drawing"
+            android:id="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/button2">
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FF660000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF660000" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FFFFCC00"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFFCC00" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FFFF0000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFF0000" />
+
+            <ImageButton
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:background="#FFFF6600"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFF6600" />
+
+            <ImageButton
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:id="@+id/imageButton8"
+                android:background="@drawable/brush"/>
+
+            <ImageButton
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:id="@+id/imageButton10"
+                android:background="@drawable/erasernew"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton16"
+                android:background="@drawable/text"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton17"
+                android:background="@drawable/importpic"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

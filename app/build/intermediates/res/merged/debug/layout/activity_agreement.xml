@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center|center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233f69">
+
+
+    <TextView
+        android:id="@+id/agreement_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:text="A contract is a voluntary arrangement between two or more parties that is enforceable at law as a binding legal agreement. Contract is a branch of the law of obligations in jurisdictions of the civil law tradition.
+
+A contract arises when the parties agree that there is an agreement. Formation of a contract generally requires an offer, acceptance, consideration, and a mutual intent to be bound. Each party to a contract must have capacity to enter the agreement. Minors, intoxicated persons, and those under a mental affliction may have insufficient capacity to enter a contract. Some types of contracts may require formalities, such as a memorialization in writing."
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <Button
+        android:id="@+id/confirmagreement_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree "
+        android:layout_alignBaseline="@+id/cancelagreement_btn"
+        android:layout_alignBottom="@+id/cancelagreement_btn"
+        android:layout_alignStart="@+id/agreement_text" />
+
+    <Button
+        android:id="@+id/cancelagreement_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refuse"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/agreement_text"
+        android:layout_marginBottom="125dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TERMS AND CONDITIONS"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

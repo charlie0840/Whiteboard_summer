@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.charlie0840.whiteboard1.MyclasslistActivity"
+    android:background="#9fa6aa">
+
+<Spinner
+    android:id="@+id/myclass_spinner"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+</Spinner>
+
+<Button
+    android:id="@+id/sessionselect_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/myclass_spinner"
+    android:layout_centerHorizontal="true"
+    android:text="Session"/>
+
+<Button
+    android:id="@+id/confirmmyclass_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirm"
+    android:layout_toLeftOf="@+id/addorjoinmyclass_btn"
+    android:layout_alignLeft="@+id/myclass_spinner"
+    android:layout_margin="5dp"
+    android:layout_alignParentBottom="true"/>
+
+<Button
+    android:id="@+id/cancelmyclass_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel "
+    android:layout_margin="5dp"
+    android:layout_toRightOf="@+id/addorjoinmyclass_btn"
+    android:layout_alignRight="@+id/myclass_spinner"
+    android:layout_alignParentBottom="true"/>
+
+<Button
+    android:id="@+id/addorjoinmyclass_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:layout_alignParentBottom="true"
+    android:text="Create"/>
+
+
+
+    <EditText
+        android:id="@+id/classname_text"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="enter class name here"
+        android:layout_above="@+id/permissioncode_text"
+        android:layout_alignEnd="@+id/permissioncode_text"
+        android:layout_alignStart="@+id/permissioncode_text" />
+
+
+<EditText
+    android:id="@+id/permissioncode_text"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:hint="enter permission code here"
+    android:layout_above="@+id/confirmmyclass_btn"
+    android:layout_alignStart="@+id/confirmmyclass_btn"
+    android:layout_alignEnd="@+id/cancelmyclass_btn" />
+</RelativeLayout>

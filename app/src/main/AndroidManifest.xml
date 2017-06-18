@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.charlie0840.whiteboard1"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permission required to use the TCP transport -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    /uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Permission required to use the Bluetooth transport -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="23" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="WMS Whiteboard">
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NetworkActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PermissionCode"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClassroomtypeActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CollegeselectActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CollegeloginActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AgreementActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyclasslistActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Popup" />
+        <activity
+            android:name=".SelectsessionActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Popup" />
+        <activity
+            android:name=".ClassstartActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClassendActivity"
+            android:configChanges="orientation"
+            android:label="WMS Whiteboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Client"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>
